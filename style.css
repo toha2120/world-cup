@@ -7,7 +7,7 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 50px;
 }
-/* header-banner */
+ /* <!-- header-banner section -->   */
 .top-banner {
   display: flex;
   justify-content: center;
@@ -50,7 +50,8 @@ body {
   height: 613px;
   margin-top: 95px;
 }
-/* section two */
+/* section two --------
+-------blogs-match */
 .blogs-match {
     display: flex;
     flex-direction: row;
@@ -247,7 +248,10 @@ hr {
   .footer {
   background-color: #161616;
   width: 100%;
-  height: 847px;
+  height: 800px;
+  margin-left: 0px;
+  margin right: -50px;
+  margin-bottom: -50%;
 }
 .footer h1 {
   text-align: center;
@@ -259,7 +263,6 @@ hr {
   color: #ffffff53;
   width: 80%;
   margin: auto;
-  /* margin-bottom: 40px; */
 }
  .footer-bar {
   padding: 40px;
@@ -267,10 +270,11 @@ hr {
 } 
 .footer-bar a {
   display: flex;
-  flex-direction: column;
-  padding-top: 70px;
+  padding-top: 40px;
   text-decoration: none;
   color: #b9b9b9;
+  font-size: 20px;
+  text-align: center;
 }
 .footer-bar hr{
   display: none;
@@ -318,7 +322,9 @@ hr {
   margin-top: 35px;
   margin-right: -30px;
 }
-/* menu */
+/*-----------------
+ menu and blogs 
+----------------*/
 
 .menu p {
   background-color: rgb(255, 255, 255);
@@ -357,10 +363,6 @@ hr {
     
   }
   
-  /* .menu-blogs{
-    display: grid ;
-    grid-template-columns: repeat(2, 1fr) ;
-  } */
   /* blogs */
   .container-blog {
     display: grid;
@@ -386,7 +388,6 @@ hr {
   color: #ffffff53;
   width: 80%;
   margin: auto;
-  /* margin-bottom: 40px; */
 }
  .footer-bar {
   padding: 40px;
