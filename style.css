@@ -5,7 +5,7 @@
 ----------------*/
 body {
   font-family: "Montserrat", sans-serif;
-  margin: 50px;
+  margin:50px;
 }
  /* <!-- header-banner section -->   */
 .top-banner {
@@ -45,6 +45,13 @@ body {
   border-radius: 5px;
   padding: 10px 20px;
   font: bold;
+  width: 100px;
+  height: 100px;
+  transition: width 2s;
+}
+.banner-text a :hover{
+   padding: 15px 10px;
+    background: red;
 }
 .banner img {
   height: 613px;
@@ -60,29 +67,31 @@ body {
 .menu-blogs {
   background-color: #1c1b1b;
   width: 312px;
-  height: 312px;
+  height: 250px;
   border-radius: 10px;
   margin-top: 25px;
-}
-.menu p {
-  background-color: rgb(255, 255, 255);
-  width: 200px;
-  height: 50px;
-  padding: 10px 20px;
-  border-radius: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 25px;
-  text-align: center;
 }
 .menu a {
-  text-align: center;
+  display: block;
   text-decoration: none;
-  color: #1c1b1b;
+  color: rgb(18, 17, 17);
+  text-align: center;
+}
+
+#all-group{
+  background-color: white;
+  padding:15px;
+  margin: 20px 10px;
+}
+#Upcoming-Match{
+  background-color: white;
+  padding:15px;
+  margin: 20px 10px;
 }
 #blog {
   background-color: red;
-  
+  padding:15px;
+  margin:20px 10px;
 }
 #blog a {
   color: white;
@@ -91,16 +100,15 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 20px;
-
 }
+
 .blog {
   margin: 10px;
   background-color: rgb(255, 255, 255);
   width: 312px;
   height: 362px;
   border-radius: 10px;
-  box-shadow: 2px 2px grey;
-
+  border: 1px solid lavender;
 }
 .blog button {
   padding: 2px 10px;
@@ -116,13 +124,14 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
 }
-/* second website----*/
+/* start second website----*/
 .match-time {
   width: 312px;
   height: 224px;
-  background-color: #e8e8e8;
+  background-color:rgb(255, 255, 255);
   border-radius: 5px;
   margin: 10px;
+  border: 1px solid lavender;
 }
 .match {
   display: flex;
@@ -144,13 +153,33 @@ body {
 .match-text p {
   margin-top: -6px;
 }
+/* end second website----*/
+.view-button button{
+  color: rgb(255, 255, 255);
+  background-color: red;
+  padding: 15px 60px;
+  font-size: 20px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: none;
+  border-radius: 5px;
+  
+  
+}
+.view-button{
+  height: 200px;
+  position: relative;
+  display: none;
+}
+
 /* \ <!-- footer section --> */
 .footer {
   background-color: #161616;
   width: 1350px;
   height: 380px;
   margin-left: -50px;
-  margin right: -50px;
   margin-bottom: -50%;
 }
 .footer h1 {
@@ -174,19 +203,44 @@ hr {
   color: #b9b9b9;
   padding-left: 40px;
 }
-.footer-bar hr{
+.socail-icon {
+  display: flex;
+  font-size: 30px;
+  width: 100%;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
-
+.fa-facebook-square{
+  color: white;
+}
+.fa-instagram-square{
+  color: white;
+}
+.fa-linkedin{
+  color: white;
+}
+.fa-whatsapp-square{
+  color: white;
+}
+.fa-facebook-messenger{
+  color: white;
+}
 /*----------- media qurey start---------- */
 /* mobile divcse */
  @media only screen and (max-width: 668px) {
+   body{
+    overflow-x: hidden;
+  } 
+
   .header-banner {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #161616;
   width: 334px;
-  height: 472px;
+  height: 500px;
   border-radius: 10px;
   }
   .banner-text {
@@ -196,11 +250,11 @@ hr {
 }
 .banner-text h1 {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 25px;
   margin: 20px;
 }
 .banner-text p {
-  font-size: 8PX;
+  font-size: 10PX;
   font-weight: 100px;
   margin-bottom: 20px;
 }
@@ -215,26 +269,30 @@ hr {
 .banner img {
   width: 253px;
   height: 265px;
-  margin-top: 0px;
+  margin-top: 23px;
   
 }
 /*-----------------
  menu and blogs 
 ----------------*/
+.menu-blogs{
+  background-color: white;
+}
 .menu p {
   background-color: rgb(255, 255, 255);
   width: 350px;
   height: 50px;
-  padding: 5px 10px;
+  border: 1px solid gray;
   border-radius: 10px;
   margin-right: 30px;
   text-align: center;
 }
 .menu a {
-  text-align: center;
   text-decoration: none;
-  color: #1c1b1b;
+  color: #100f0f;
+  border: 2px solid black;
 }
+  /* start website two blogs */
 .blogs-match {
     display: flex;
     flex-direction: column;
@@ -244,14 +302,15 @@ hr {
     grid-template-columns: repeat(1, 1fr);
     margin-top:50px;
   }
+    /* start website two blogs */
+
+
     /* \ <!-- footer section --> */
   .footer {
   background-color: #161616;
-  width: 100%;
-  height: 800px;
-  margin-left: 0px;
-  margin right: -50px;
-  margin-bottom: -50%;
+  width: 150%;
+  height: 100%;
+  text-align: center;
 }
 .footer h1 {
   text-align: center;
@@ -261,11 +320,17 @@ hr {
 }
 hr {
   color: #ffffff53;
-  width: 80%;
-  margin: auto;
+  width: 60%;
+  margin-right:120px;
+}
+.footer-bar a{
+  padding-left: 40%;
+}
+.view-button button{
+  display: none;
 }
  .footer-bar {
-  padding: 40px;
+  padding: 30px;
   text-align: center;
 } 
 .footer-bar a {
@@ -273,7 +338,7 @@ hr {
   padding-top: 40px;
   text-decoration: none;
   color: #b9b9b9;
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
 }
 .footer-bar hr{
@@ -283,7 +348,9 @@ hr {
 /*---------------------
  -----------tab divecs -----------*/
 @media only screen and (min-width: 669px) and (max-width: 1000px) {
-  
+   body{
+    overflow-x: hidden;
+  } 
  .header-banner {
   display: flex;
   justify-content: space-between;
@@ -325,58 +392,68 @@ hr {
 /*-----------------
  menu and blogs 
 ----------------*/
-
-.menu p {
-  background-color: rgb(255, 255, 255);
-  width: 700px;
-  height: 30px;
-  padding: 5px 10px;
-  border-radius: 10px;
-  margin-left: 100px;
-  margin-right: 20px;
-  margin-top: 25px;
-  text-align: center;
+.menu{
+  display: flex;
+  justify-content: space-around;
 }
-.menu a {
-  text-align: center;
-  text-decoration: none;
-  color: #1c1b1b;
+.menu-blogs {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+#Upcoming-Match {
+    background-color: white;
+    border: 1px solid #161616;
+    padding: 15px 40px;
+    border-radius: 5px;
+}
+#all-group {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #161616;
+    padding: 15px 40px;
+    border-radius: 5px;
 }
 #blog {
-  background-color: red;
-  
+    background-color: red;
+    padding: 15px 40px;
+    margin: 20px 0px;
+    border-radius: 5px;
 }
-#blog a {
-  color: white;
+#blog {
+  color: rgb(255, 252, 252);
 }
-  
+  /* start website two blogs */
   .blogs-match {
     display: flex;
-    flex-direction: row;
-  }
-  .menu {
-    display: flex;
-    background-color: none;
-    width: 0;
-    height: 0;
-    grid-row: auto;
-    
-  }
-  
+    flex-direction: column;
+}
+#Upcoming-Match{
+  background-color: white;
+  padding:15px;
+  margin:20px 10px;
+}
+   /* end website two blogs */
+
   /* blogs */
   .container-blog {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 150px;
+    justify-content: space-around;
   }
+  .view-button{
+    display: block;
+    margin-right: 30%;
+  }
+
   /* \ <!-- footer section --> */
   .footer {
   background-color: #161616;
   width: 834px;
-  height: 345px;
-  margin-left: -50px;
-  margin right: -50px;
-  margin-bottom: -50%;
+  height: 445px;
+   justify-content: space-around;
 }
 .footer h1 {
   text-align: center;
@@ -387,20 +464,25 @@ hr {
 hr {
   color: #ffffff53;
   width: 80%;
-  margin: auto;
+  margin-right: 100px; 
+   justify-content: space-around;
+
 }
  .footer-bar {
   padding: 40px;
   text-align: center;
 } 
 .footer-bar a {
-  padding-top: 70px;
+  padding-top: 40px;
   text-decoration: none;
   color: #b9b9b9;
+   justify-content: space-around;
 }
-.footer-bar hr{
-  display: none;
+
+ .socail-icon {
+  margin-top: -10px;
  }
+ 
 }
 
 /*---------------------
